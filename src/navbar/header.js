@@ -1,82 +1,33 @@
 import React, { Component } from "react";
+import {Nav, NavDropdown, Navbar} from "react-bootstrap";
 import "./headerCss.css";
 
 export default class Header extends Component {
   componentDidMount() {}
   render() {
-    return (
-      <nav className="topnav-centered navbar fixed-top navbar-expand-lg navbar-dark scrolling-navbar ">
-        <div className="container">
-          <a className="navbar-brand" href="" target="_blank">
-            <strong>JSW</strong>
-          </a>
-
-          {/* collapse */}
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-
-          {/* Links */}
-          <div
-            className="collapse navbar-collapse navbar-inverse"
-            id="navbarSupportedContent"
-          >
-            {/* Left section */}
-            <ul className="nav navbar-nav navBarSetting ">
-              <li className="nav-item active">
-                <a className="nav-link" href="#">
-                  Home
-                  <span className="sr-only">(current)</span>
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#AboutMe">
-                  About
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#WorkWithMe">
-                  Why me?
-                </a>
-              </li>
-
-              <li className="nav-item">
-                <a className="nav-link" href="#Timeline">
-                  Carrier Timeline
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link" href="#bannerBkg">
-                  Contact
-                </a>
-              </li>
-            </ul>
-
-            {/* Right section
-                    <ul className="navbar-nav nav-flex-icons">
-                      <li className="nav-item">
-                        <a href="https://www.facebook.com/mdbootstrap" className="nav-link" target="_blank">
-                          <i className="fab fa-facebook-f"></i>
-                        </a>
-                      </li>
-                      <li className="nav-item">
-                        <a href="https://twitter.com/MDBootstrap" className="nav-link" target="_blank">
-                          <i className="fab fa-twitter"></i>
-                        </a>
-                      </li>
-                    
-                    </ul> */}
-          </div>
-        </div>
-      </nav>
+    return (      
+      <Navbar sticky="top" collapseOnSelect expand="lg" bg="dark" variant="dark" >
+  <Navbar.Brand href="#home">JSW</Navbar.Brand>
+  <Navbar.Toggle aria-controls="responsive-navbar-nav" />
+  <Navbar.Collapse id="responsive-navbar-nav">
+    <Nav className="mr-auto">
+      <Nav.Link href="#bannerBkg">Home</Nav.Link>
+      <Nav.Link href="#AboutMe">About</Nav.Link>
+      {/* <NavDropdown title="Dropdown" id="collasible-nav-dropdown">
+        <NavDropdown.Item href="#action/3.1"></NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.2">Carrier Timeline</NavDropdown.Item>
+        <NavDropdown.Item href="#action/3.3">Contact</NavDropdown.Item>
+        <NavDropdown.Divider />
+        <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+      </NavDropdown> */}
+    </Nav>
+    <Nav>
+      <Nav.Link href="#WorkWithMe">Why me?</Nav.Link>
+      <Nav.Link href="#Timeline">Carrier Timeline</Nav.Link>
+      <Nav.Link href="#bannerBkg">Contact</Nav.Link>      
+    </Nav>
+  </Navbar.Collapse>
+</Navbar>
     );
   }
 }
