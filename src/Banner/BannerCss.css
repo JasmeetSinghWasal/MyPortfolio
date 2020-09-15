@@ -1,0 +1,64 @@
+
+#bannerBkg { 
+  
+    padding-top: 100px;
+    height: 85vh;;
+    /* background-position: 50%; */
+    /* background-repeat: no-repeat; */
+    background: linear-gradient(rgba(0,0,0,.8),rgba(0,0,0,.4)), url(./Header.jpg) no-repeat center center fixed;
+    background-size: cover;
+    --webkit-background-size: cover;
+    --moz-background-size: cover;
+    --o-background-size: cover;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    color:white;
+}
+
+#introDiv
+{
+  /* position: absolute; */
+  padding: 10% 0 10% 0;
+  margin-bottom: 10%;
+  align-content: center;
+  align-self: auto;
+  font-family: "ui-monospace";
+  animation-timing-function:linear;
+}
+#nameIntro
+{
+  font-size: 50px;
+
+  /* visibility: visible; animation-duration: 1s; animation-delay: 0.5s; animation-name: fadeInLeft; */
+}
+.bannerColor
+{
+  color:rgb(240,187,87);
+}
+#oneLiner
+{
+  font-family: "ui-monospace";
+  font-size: 20px;
+  
+  /* visibility: visible; animation-duration: 1s; animation-delay: 1s; animation-name: fadeInRight; */
+}
+.jumbotron
+{
+background-color: rgb(20,21,24) !important;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 0px;
+  padding-bottom: 10px !important;
+
+}
+
+#connect-icons
+{
+  padding-top: 3%;
+  font-size: 40px;
+  color:white;
+  
+}
+.fab
+{
+  padding-left: 3%;
+}

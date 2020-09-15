@@ -1,0 +1,16 @@
+
+.reasons-to-employ {
+    color: #000000;
+    margin: 3rem auto 2rem auto;
+    padding: 40px 0 20px 0;
+}
+/* reasons-to-employ-block {
+    display: flex;
+}
+.reasons-container {
+    flex: 1 33%;
+} */
+.reasons-to-employ i {
+    color: red;
+    margin: .3em;
+}

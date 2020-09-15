@@ -1,0 +1,12 @@
+nav{
+    background-color: rgb(20,20,19)
+}
+/* .navBarSetting
+{
+    /* padding-left: 20% !important; */
+    
+/* } */ 
+.navbar-collapse
+{
+    flex-grow:0 !important;
+}
